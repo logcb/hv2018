@@ -27,6 +27,8 @@ a:hover { color:#424242; text-decoration:none; }
 a:focus { color:#fff; text-decoration:none;}
 
 .en p, .fr p, .en a, .fr a, .archive{ font-size:23px; line-height:32px;}
+.en p {padding-bottom:12px;}
+.fr p {padding-top:12px;}
 .en a, .fr a{ border-bottom:1px solid #424242; }
 .en a:hover, .fr a:hover{ border-bottom:none; }
 
@@ -104,7 +106,6 @@ tr {border-bottom:1px solid #424242}
     transition: opacity .25s ease-in-out;
     -moz-transition: opacity .25s ease-in-out;
     -webkit-transition: opacity .25s ease-in-out;
-	display:inline;
 }
 th:hover>.th-arrow{opacity:1;}
 td.ar-year {padding-right:40px;}
@@ -122,6 +123,8 @@ td.ar-year {padding-right:40px;}
 .project-container img {width:100%; height:auto; margin-bottom:60px;}
 .project-info {max-width:1200px; margin:auto;}
 .project-credits {padding-bottom:40px;}
+.project-credits a {border-bottom:1px solid #424242;}
+.project-credits a:hover {border-bottom:none;}
 .portrait {text-align:center;}
 .portrait img {max-width:900px; width:50% !important;}
 
