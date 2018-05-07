@@ -30,7 +30,7 @@ a:focus { color:#fff; text-decoration:none;}
 .en a, .fr a{ border-bottom:1px solid #424242; }
 .en a:hover, .fr a:hover{ border-bottom:none; }
 
-h2 {font-size:32px; font-weight:normal; line-height:42px; padding-bottom:8px;}	
+h2 {font-size:32px; font-weight:normal; line-height:40px; padding-bottom:12px;}	
 hr {width:60px; height: 1px; border: 0; border-top: 1px solid #424242;}
 
 /* UX */
@@ -104,6 +104,7 @@ tr {border-bottom:1px solid #424242}
     transition: opacity .25s ease-in-out;
     -moz-transition: opacity .25s ease-in-out;
     -webkit-transition: opacity .25s ease-in-out;
+	display:inline;
 }
 th:hover>.th-arrow{opacity:1;}
 td.ar-year {padding-right:40px;}
