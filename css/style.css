@@ -38,13 +38,14 @@ hr {width:60px; height: 1px; border: 0; border-top: 1px solid #424242;}
 /* UX */
 .lazyloading, .lazyload {-webkit-filter: blur(5px); filter: blur(5px); opacity:0;}
 .lazyloaded {transition: all .4s ease-in; -moz-transition: opacity .4s ease-in; -webkit-transition: all .4s ease-in;}
+.cover {position: fixed; height: 100%; width: 100%; top:0; left: 0; background-color:#000;}
 
 /* Nav */
 nav {
 	padding: 34px 40px 0px 40px; 
 	width:100%; 
 	position:fixed; 
-	z-index:2; 
+	z-index:10; 
 	min-width:320px;
 	font-weight:600;
 }
