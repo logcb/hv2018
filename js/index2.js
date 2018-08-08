@@ -5,5 +5,6 @@ $('.slides').flickity({
 	pageDots: false,
 	prevNextButtons: false,
 	wrapAround: true,
+	lazyLoad: 2,
 	bgLazyLoad: true
 });
