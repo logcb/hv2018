@@ -1,10 +1,8 @@
-$('.slides').flickity({
-	// options
+var $carousel = $('.slides').flickity({
+	bgLazyLoad: true,
 	contain: true,
-	autoPlay: 4000,
+	autoPlay: 3500,
 	pageDots: false,
 	prevNextButtons: false,
-	wrapAround: true,
-	lazyLoad: 2,
-	bgLazyLoad: true
+	wrapAround: true
 });
