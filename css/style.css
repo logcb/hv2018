@@ -32,7 +32,7 @@ a:focus { color:#fff; text-decoration:none;}
 .en a, .fr a{ border-bottom:1px solid #424242; }
 .en a:hover, .fr a:hover{ border-bottom:none; }
 
-h2 {font-size:32px; font-weight:normal; line-height:36px; padding-bottom:12px;}	
+h2 {font-size:32px; font-weight:normal; line-height:40px;}	
 hr {width:60px; height: 1px; border: 0; border-top: 1px solid #424242;}
 
 /* UX */
@@ -82,6 +82,16 @@ nav {
 .flickity-bg-lazyloaded{
 	opacity:1;
 }
+.flickity-button {background:none !important; margin-left:20px; margin-right:20px;}
+.flickity-button-icon {
+	fill: #fff !important;
+	transition: fill .1s ease-in-out;
+    -moz-transition: fill .1s ease-in-out;
+    -webkit-transition: fill .1s ease-in-out;
+}
+.flickity-prev-next-button {width:35px !important; height:35px !important;}
+.flickity-button-icon:hover {fill:#424242 !important;}
+
 .slide-text{
 	position:absolute;
 	bottom:0;
@@ -119,8 +129,11 @@ td.ar-year {padding-right:40px;}
 .project-nav {display:inline; margin-left:40px;}
 .project-nav ul {list-style-type:none; padding:0; margin:0; display:inline;}
 .project-nav ul li {display:inline;}
-.project-nav a {color:#fff;}
-.project-nav a:hover {color:#424242;}
+.project-nav img {width:11px; margin-top:-4px;}
+.project-nav img:hover {opacity:0.25;     transition: opacity .07s ease-in-out;
+    -moz-transition: opacity .07s ease-in-out;
+    -webkit-transition: opacity .07s ease-in-out;
+}
 .project-next {padding-left:15px;}
 
 /* Project Page */
@@ -164,6 +177,7 @@ footer a {margin-left:15px;}
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767px) {
 	nav {padding: 13px 15px 0px 15px;}
+	.flickity-button {margin-left:-3px; margin-right:-3px;}
 	h2 {font-size:24px; line-height:32px;}
 	.ar-field {display:none;}
 	.project-container {padding-top:120px;}
@@ -183,6 +197,7 @@ footer a {margin-left:15px;}
 	nav {background-color:#000; padding-bottom:13px;}
 	nav.index-nav {background-color:transparent; padding-bottom:0px;}
 	.nav-right a {padding-left:10px;}
+	.flickity-button {display:none;}
 	.slides-container {height: calc(100vh - var(--vh-offset));}
 	.slides-show {height: calc(100vh - var(--vh-offset));}
 	.slide {width:100%;}

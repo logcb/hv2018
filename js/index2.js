@@ -3,6 +3,11 @@ var $carousel = $('.slides').flickity({
 	contain: true,
 	autoPlay: 3500,
 	pageDots: false,
-	prevNextButtons: false,
-	wrapAround: true
+	wrapAround: true,
+	arrowShape: { 
+	  x0: 0,
+	  x1: 60, y1: 30,
+	  x2: 60, y2: 0,
+	  x3: 60
+	}
 });
