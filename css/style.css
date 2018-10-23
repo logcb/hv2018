@@ -17,11 +17,6 @@ body {
 }
 
 p {margin-bottom: 0px;}
-a, th {
-    transition: color .07s ease-in-out;
-    -moz-transition: color .07s ease-in-out;
-    -webkit-transition: color .07s ease-in-out;
-}
 
 a:hover { color:#424242; text-decoration:none; }
 a:focus { color:#fff; text-decoration:none;}
@@ -85,9 +80,6 @@ nav {
 .flickity-button {background:none !important; margin-left:20px; margin-right:20px;}
 .flickity-button-icon {
 	fill: #fff !important;
-	transition: fill .1s ease-in-out;
-    -moz-transition: fill .1s ease-in-out;
-    -webkit-transition: fill .1s ease-in-out;
 }
 .flickity-prev-next-button {width:35px !important; height:35px !important;}
 .flickity-button-icon:hover {fill:#424242 !important;}
@@ -112,18 +104,23 @@ nav {
 /* Archive */
 th:hover {cursor:pointer; color:#424242;}
 table {width:100%;}
-tr {border-bottom:1px solid #424242}
+tr {border-bottom:1px solid #424242;}
 .archive td, .archive th {padding-right:12px; vertical-align: top; padding-top:5px; padding-bottom:6px;}
-.th-arrow {
-	opacity:0; 
-	color: #424242; 
-	padding-left:5px;
-    transition: opacity .25s ease-in-out;
-    -moz-transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out;
-}
-th:hover>.th-arrow{opacity:1;}
 td.ar-year {padding-right:40px;}
+.archive .header { padding-right:15px;}
+.arc-arrow {width:14px; height:15px; display:inline-block; margin-left:5px;}
+.headerSortUp .arc-arrow  {
+	background-image: url(up.svg);
+	background-repeat: no-repeat;
+	background-position:bottom;
+	background-size: 11px;
+}
+.headerSortDown .arc-arrow  {
+	background-image: url(dn.svg);
+	background-repeat: no-repeat;
+	background-position:bottom;
+	background-size: 11px;
+}
 
 /* Project Nav */
 .project-nav {display:inline; margin-left:40px;}
