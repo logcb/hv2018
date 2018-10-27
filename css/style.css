@@ -21,7 +21,7 @@ p {margin-bottom: 0px;}
 a:hover { color:#424242; text-decoration:none; }
 a:focus { color:#fff; text-decoration:none;}
 
-.en p, .fr p, .en a, .fr a, .archive{ font-size:23px; line-height:30px;}
+.en p, .fr p, .en a, .fr a, .archive{ font-size:23px; line-height:30px; letter-spacing:0.1px;}
 .en p {padding-bottom:12px;}
 .fr p {padding-top:12px;}
 .en a, .fr a{ border-bottom:1px solid #424242; }
@@ -43,6 +43,7 @@ nav {
 	z-index:10; 
 	min-width:320px;
 	font-weight:600;
+	text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
 }
 .nav-right {float:right;}
 .nav-right a {padding-left:15px;}
@@ -89,6 +90,7 @@ nav {
 	bottom:0;
 	padding-left:40px;
 	padding-bottom:34px;
+	text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
 }
 .slide-text p {
 	display:inline;
@@ -110,13 +112,13 @@ td.ar-year {padding-right:40px;}
 .archive .header { padding-right:15px;}
 .arc-arrow {width:14px; height:15px; display:inline-block; margin-left:5px;}
 .headerSortUp .arc-arrow  {
-	background-image: url(up.svg);
+	background-image: url(../img/arrows/u.svg);
 	background-repeat: no-repeat;
 	background-position:bottom;
 	background-size: 11px;
 }
 .headerSortDown .arc-arrow  {
-	background-image: url(dn.svg);
+	background-image: url(../img/arrows/d.svg);
 	background-repeat: no-repeat;
 	background-position:bottom;
 	background-size: 11px;
@@ -127,10 +129,7 @@ td.ar-year {padding-right:40px;}
 .project-nav ul {list-style-type:none; padding:0; margin:0; display:inline;}
 .project-nav ul li {display:inline;}
 .project-nav img {width:11px; margin-top:-4px;}
-.project-nav img:hover {opacity:0.25;     transition: opacity .07s ease-in-out;
-    -moz-transition: opacity .07s ease-in-out;
-    -webkit-transition: opacity .07s ease-in-out;
-}
+.project-nav img:hover {opacity:0.25;}
 .project-next {padding-left:15px;}
 
 /* Project Page */
@@ -156,7 +155,7 @@ td.ar-year {padding-right:40px;}
 .ex-year {padding-right:10px;}
 
 /* Footer */
-footer {text-align:center; padding-top:80px; padding-bottom:60px;}
+footer {text-align:center; padding-top:80px; padding-bottom:60px; font-weight:bold;}
 footer p,a {display:inline; color:#fff;}
 footer a {margin-left:15px;}
 
