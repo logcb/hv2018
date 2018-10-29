@@ -17,11 +17,10 @@ body {
 }
 
 p {margin-bottom: 0px;}
-
 a:hover { color:#424242; text-decoration:none; }
 a:focus { color:#fff; text-decoration:none;}
 
-.en p, .fr p, .en a, .fr a, .archive{ font-size:23px; line-height:30px; letter-spacing:0.1px;}
+.en p, .fr p, .en a, .fr a, .archive{ font-size:22px; line-height:28px;}
 .en p {padding-bottom:12px;}
 .fr p {padding-top:12px;}
 .en a, .fr a{ border-bottom:1px solid #424242; }
@@ -32,8 +31,12 @@ hr {width:60px; height: 1px; border: 0; border-top: 1px solid #424242;}
 
 /* UX */
 .lazyloading, .lazyload {-webkit-filter: blur(5px); filter: blur(5px); opacity:0;}
-.lazyloaded {transition: all .4s ease-in; -moz-transition: opacity .4s ease-in; -webkit-transition: all .4s ease-in;}
+.lazyloaded {transition: all .4s ease; -moz-transition: opacity .4s ease; -webkit-transition: all .4s ease;}
 .cover {position: fixed; height: 100%; width: 100%; top:0; left: 0; background-color:#000;}
+@keyframes fade-in {
+	0% {opacity:0;}
+	100% {opacity: 1;}
+}
 
 /* Nav */
 nav {
@@ -43,7 +46,7 @@ nav {
 	z-index:10; 
 	min-width:320px;
 	font-weight:600;
-	text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	text-shadow: 0px 0px 5px rgba(0,0,0,0.4);
 }
 .nav-right {float:right;}
 .nav-right a {padding-left:15px;}
@@ -82,15 +85,18 @@ nav {
 .flickity-button-icon {
 	fill: #fff !important;
 }
-.flickity-prev-next-button {width:35px !important; height:35px !important;}
+.flickity-prev-next-button {width:34px !important; height:34px !important;}
 .flickity-button-icon:hover {fill:#424242 !important;}
 
+.arrow{
+	box-shadow: 0px 0px 5px 5px red;
+}
 .slide-text{
 	position:absolute;
 	bottom:0;
 	padding-left:40px;
 	padding-bottom:34px;
-	text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	text-shadow: 0px 0px 5px rgba(0,0,0,0.4);
 }
 .slide-text p {
 	display:inline;
@@ -133,7 +139,7 @@ td.ar-year {padding-right:40px;}
 .project-next {padding-left:15px;}
 
 /* Project Page */
-.project-container {padding-top:140px; max-width:1600px; margin:auto;}
+.project-container {padding-top:140px; max-width:1600px; margin:auto; animation: fade-in .4s;}
 .project-container img {width:100%; height:auto; margin-bottom:60px;}
 .project-info {max-width:1200px; margin:auto;}
 .project-credits {padding-bottom:40px;}
