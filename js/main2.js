@@ -5,7 +5,8 @@ new Pjax({
 		".slides-container",
 		".archive",
 		".project-nav",
-		".project-container"
+		".project-container",
+		"footer"
 	]
   });
   
