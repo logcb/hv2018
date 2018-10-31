@@ -9,10 +9,10 @@ new Pjax({
 	]
   });
   
-var $carousel = $('.slides').flickity({
+var $gallery = $('.slides').flickity({
 	bgLazyLoad: true,
 	contain: true,
-	autoPlay: 3500,
+	autoPlay: 4000,
 	pageDots: false,
 	wrapAround: true,
 	arrowShape: { 
@@ -22,6 +22,17 @@ var $carousel = $('.slides').flickity({
 	  x3: 60
 	}
 });
+
+function onLoadeddata( event ) {
+    var cell = $gallery.flickity( 'getParentCell', event.target );
+    $gallery.flickity( 'cellSizeChange', cell && cell.element );
+  }
+  
+  $gallery.find('video').each( function( i, video ) {
+    video.play();
+    $( video ).on( 'loadeddata', onLoadeddata );
+  });
+
 
 $(document).ready(function() 
 { $("#archive").tablesorter(); 
