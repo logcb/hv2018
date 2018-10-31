@@ -212,14 +212,14 @@ footer a {margin-left:15px;}
 	nav {background-color:#000; padding-bottom:13px;}
 	nav.index-nav {background-color:transparent; padding-bottom:0px;}
 	.nav-right a {padding-left:10px;}
-	.flickity-button {display:none;}
 	.slides-container {height: calc(100vh - var(--vh-offset));}
 	.slides-show {height: calc(100vh - var(--vh-offset));}
 	.slide {width:100%;}
+	.flickity-prev-next-button {width:30px !important; height:30px !important;}
 	.slide-text {display:none;}
 	.archive td {padding-bottom:3px; padding-top:2px;}
 	.th-arrow {display:none;}
-	td.ar-year {padding-right:30px;}
+	td.ar-year {padding-right:40px;}
 	.project-nav {margin-left:14px;}
 	.project-next {padding-left:10px;}
 	.project-container {padding-top:80px;}
